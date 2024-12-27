@@ -1,0 +1,48 @@
+{
+  "name": "perplexity-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that integrates with Perplexity AI for intelligent coding assistance",
+  "type": "module",
+  "bin": {
+    "perplexity-mcp": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "0.6.0",
+    "axios": "^1.7.9"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "mcp",
+    "perplexity",
+    "ai",
+    "coding",
+    "assistance",
+    "claude",
+    "anthropic"
+  ],
+  "author": "Joe Wilson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/perplexity-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/perplexity-mcp/issues"
+  },
+  "homepage": "https://github.com/yourusername/perplexity-mcp#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}
