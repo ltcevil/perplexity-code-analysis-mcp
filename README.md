@@ -2,6 +2,8 @@
 
 A Model Context Protocol (MCP) server that provides intelligent code analysis and debugging capabilities using Perplexity AI's API. Works seamlessly with the Claude desktop client.
 
+<a href="https://glama.ai/mcp/servers/oxchzx8c75"><img width="380" height="200" src="https://glama.ai/mcp/servers/oxchzx8c75/badge" alt="Perplexity Server MCP server" /></a>
+
 ## Features
 
 - **Intelligent Error Analysis**: Detailed breakdown of coding errors with root cause analysis
