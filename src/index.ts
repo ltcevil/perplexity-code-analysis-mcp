@@ -278,7 +278,7 @@ Alternative Approaches:
 \`\`\``;
 
         const response = await this.axiosInstance.post<PerplexityResponse>('/chat/completions', {
-          model: 'llama-3.1-sonar-huge-128k-online',
+          model: 'sonar-reasoning-pro',
           messages: [
             {
               role: 'system',
